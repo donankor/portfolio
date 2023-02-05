@@ -21,25 +21,24 @@
 </script>
 
 <style lang="scss" scoped>
-  .container{
-    margin: 1%;
-    padding: 1%;
-    width: 45%;
-    background: white;
+.container{
+  margin: 1%;
+  padding: 1%;
+  width: 45%;
+  background: white;
 
-    border-radius: 15px;
+  border-radius: 15px;
 
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    @media (max-width: 768px) {
-      width: 85%;
-
-      padding: 15px;
-    }
-
-    .element {
-      display: flex;
-    }
+  @media (max-width: 768px) {
+    width: 85%;
+    padding: 15px;
   }
+
+  .element {
+    display: flex;
+  }
+}
 </style>
