@@ -1,11 +1,22 @@
 <template>
   <div class="cont" >
     <Card style="margin-bottom: 20px" v-for="card in projects" :item="card" :key="card.name" />
+
+    <Contacts/>
+    <Education/>
+    <Skills/>
+    <Experience/>
+
   </div>
 </template>
 
 <script setup >
 import Card from "~/components/Features/Projects/Card.vue";
+
+import Contacts from "~/components/Features/Сontacts.vue";
+import Education from "~/components/Features/Education.vue";
+import Skills from "~/components/Features/Skills.vue";
+import Experience from "~/components/Features/Experience.vue";
 
 const projects = [{
     name: 'tl',
