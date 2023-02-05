@@ -13,11 +13,11 @@
   import {indexStore} from "~/store";
   const store = indexStore();
 
-  onMounted(() => {
-    store.set(['mobile', window.innerWidth < 768])
-
-    window.onresize = () => store.set(['mobile', window.innerWidth < 768])
-  })
+  // onMounted(() => {
+  //   store.set(['mobile', window.innerWidth < 768])
+  //
+  //   window.onresize = () => store.set(['mobile', window.innerWidth < 768])
+  // })
 </script>
 
 <style lang="scss" scoped>

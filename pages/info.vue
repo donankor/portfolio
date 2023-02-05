@@ -1,9 +1,9 @@
 <template>
   <div class="cont">
-<!--    <Contacts/>-->
-<!--    <Education/>-->
-<!--    <Skills/>-->
-<!--    <Experience/>-->
+    <Contacts/>
+    <Education/>
+    <Skills/>
+    <Experience/>
   </div>
 </template>
 
