@@ -1,11 +1,11 @@
 <template>
   <div class="cont">
-    <Contacts/>
+    <Skills />
   </div>
 </template>
 
 <script setup>
-  import Contacts from "~/components/Features/Сontacts.vue";
+import Skills from "~/components/Features/Skills.vue";
 </script>
 
 <style lang="scss" scoped>
