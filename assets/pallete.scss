@@ -1,0 +1,12 @@
+:root {
+  --white: #fff;
+  --black: #000000;
+  --grey: #F4F4F6;
+  --main: #00BC70;
+
+  --gradient: linear-gradient(93deg, #ff31d2 0.45%, #2a63f7 100%);
+}
+
+.gradient {
+  background: var(--gradient);
+}
