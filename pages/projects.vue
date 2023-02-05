@@ -1,47 +1,36 @@
 <template>
   <div class="cont" >
     <Card style="margin-bottom: 20px" v-for="card in projects" :item="card" :key="card.name" />
-
-    <Contacts/>
-    <Education/>
-    <Skills/>
-    <Experience/>
-
   </div>
 </template>
 
 <script setup >
-import Card from "~/components/Features/Projects/Card.vue";
+  import Card from "~/components/Features/Projects/Card.vue";
 
-import Contacts from "~/components/Features/Сontacts.vue";
-import Education from "~/components/Features/Education.vue";
-import Skills from "~/components/Features/Skills.vue";
-import Experience from "~/components/Features/Experience.vue";
-
-const projects = [{
-    name: 'tl',
-    title: 'Thunder Lands',
-    text: 'Торговая площадка, PTY игры (WEB 3, NFT, Crypto)',
-    link : 'https://tl.games/'
+  const projects = [{
+      name: 'tl',
+      title: 'Thunder Lands',
+      text: 'Торговая площадка, PTY игры (WEB 3, NFT, Crypto)',
+      link : 'https://tl.games/'
+    },
+    {
+      name: 'al',
+      title: 'Amber League',
+      text: 'Новостная страница игрового комьюнити c discord авторизацией',
+      link : 'https://amberleague.io/'
   },
-  {
-    name: 'al',
-    title: 'Amber League',
-    text: 'Новостная страница игрового комьюнити c discord авторизацией',
-    link : 'https://amberleague.io/'
-},
-  {
-    name: 'am',
-    title: 'AmberSoft',
-    text: 'Информационный сайт IT Компании с уклоном в WEB 3',
-    link : 'https://www.ambersoft.llc/'
-},
-  {
-    name: 'tg',
-    title: 'RPG Game',
-    text: 'Проект-испытание. Игра в жанре RPG. Боевая система, инвентарь',
-    link : 'https://test-game-donankor.vercel.app/'
-}]
+    {
+      name: 'am',
+      title: 'AmberSoft',
+      text: 'Информационный сайт IT Компании с уклоном в WEB 3',
+      link : 'https://www.ambersoft.llc/'
+  },
+    {
+      name: 'tg',
+      title: 'RPG Game',
+      text: 'Проект-испытание. Игра в жанре RPG. Боевая система, инвентарь',
+      link : 'https://test-game-donankor.vercel.app/'
+  }]
 </script>
 
 <style lang="scss" scoped>
