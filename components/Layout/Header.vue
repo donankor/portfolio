@@ -17,7 +17,7 @@
 </div>
   <div style="margin-top: 10px; display: flex; align-items: flex-end" v-if="store.mobile" >
     <Button v-if="$route.name !== 'projects'" to="/projects" > К проектам </Button>
-    <Button v-else to="/" > Информация </Button>
+    <Button v-else to="/info" > Информация </Button>
   </div>
 </template>
 
