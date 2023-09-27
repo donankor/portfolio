@@ -15,7 +15,11 @@ export default defineNuxtConfig({
     },
   },
 
-  css: ["~/assets/base.scss", "~/assets/font/stylesheet.css"],
+  css: [
+    "~/assets/base.scss",
+    "~/assets/font/stolzy/stylesheet.css",
+    "~/assets/font/machina/stylesheet.css",
+  ],
 
   modules: ["@pinia/nuxt", "@nuxt/content"],
 });

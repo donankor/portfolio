@@ -1,37 +1,49 @@
 <template>
-<div class="head" >
-  <div class="info-bar" >
-    <img v-if="!store.mobile" class="avatar" src="/avatar.png" alt="avatar">
-    <div class="info" >
-      <h6 style="margin-bottom: 10px" >Андрей Королёв</h6>
-      <p style="margin-bottom: 10px" class="point tt-u" >Front-End developer</p>
-      <p style="margin-bottom: 10px">Мужчина, 24 года, детей нет. <br/> Не состою в браке</p>
-      <p style="width: 70px" class="point" >900 $</p>
+  <div class="head">
+    <div class="info-bar">
+      <img v-if="!store.mobile" class="avatar" src="/avatar.png" alt="avatar" />
+      <div class="info">
+        <h6 style="margin-bottom: 10px">Андрей Королёв</h6>
+        <p style="margin-bottom: 10px" class="point tt-u">
+          Front-End developer
+        </p>
+        <p style="margin-bottom: 10px; line-height: 18px">
+          Мужчина, 25 лет, детей нет. <br />
+          Не состою в браке
+        </p>
+        <p style="width: 70px" class="point">1050 $</p>
+      </div>
+    </div>
+
+    <div v-if="!store.mobile" class="btn-cont">
+      <Button v-if="$route.name !== 'projects'" to="/projects">
+        К проектам
+      </Button>
+      <Button v-else to="/"> Информация </Button>
     </div>
   </div>
-
-  <div v-if="!store.mobile" class="btn-cont" >
-    <Button v-if="$route.name !== 'projects'" to="/projects" > К проектам </Button>
-    <Button v-else to="/" > Информация </Button>
-  </div>
-</div>
-  <div style="margin-top: 10px; display: flex; align-items: flex-end" v-if="store.mobile" >
-    <Button v-if="$route.name !== 'projects'" to="/projects" > К проектам </Button>
-    <Button v-else to="/" > Информация </Button>
+  <div
+    style="margin-top: 10px; display: flex; align-items: flex-end"
+    v-if="store.mobile"
+  >
+    <Button v-if="$route.name !== 'projects'" to="/projects">
+      К проектам
+    </Button>
+    <Button v-else to="/"> Информация </Button>
   </div>
 </template>
 
-<script setup >
+<script setup>
 import Button from "~/components/Atoms/Button.vue";
-import {indexStore} from "~/store";
+import { indexStore } from "~/store";
 
-const store = indexStore()
+const store = indexStore();
 </script>
 
 <style lang="scss" scoped>
 .head {
   width: 100%;
-  background: #F4F4F6;
+  background: #f4f4f6;
 
   display: flex;
 
@@ -50,7 +62,7 @@ const store = indexStore()
     max-width: 1800px;
   }
 
-  .info-bar{
+  .info-bar {
     display: flex;
     @media (max-width: 768px) {
       padding: 20px;
