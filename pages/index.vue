@@ -16,6 +16,7 @@ import Experience from "~/components/Features/Experience.vue";
 
 <style lang="scss" scoped>
 .cont {
+
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
