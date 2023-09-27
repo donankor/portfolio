@@ -16,7 +16,7 @@
         src="/icons/location.svg"
         alt="location"
       />
-      <p>Молдова, Кишинёв</p>
+      <p>Воронеж, Россия</p>
     </div>
   </div>
 </template>
